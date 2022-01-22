@@ -18,9 +18,9 @@
 
 <?php
 require 'db_connect.php';
-
-	$register = mysqli_query($conn,  "INSERT INTO `users` (`ID`, `username`, `email`, `password`, `dateOfBirth`,  `created`)VALUES (null,  '" . ($_POST["username"]) . "', '" . $_POST["e-mail"] . "',  '" . md5($_POST["password"]) . "', '" . $_POST["date"] . "', '" . date("Y-m-d H:i:s") . "')");	
-
+if(isset($_POST["register"])) {
+	$register = mysqli_query($conn,  "INSERT INTO `users` (`ID`, `username`, `usernameLog`, `email`, `password`, `dateOfBirth`,  `created`)VALUES (null,  '" . $_POST["username"] . "',  '" . md5($_POST["username"]) . "', '" . $_POST["e-mail"] . "',  '" . md5($_POST["password"]) . "', '" . $_POST["date"] . "', '" . date("Y-m-d H:i:s") . "')");	
+}
 
 
 

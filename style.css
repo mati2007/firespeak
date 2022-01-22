@@ -5,3 +5,37 @@ body {
 input {
 	float: left;
 }
+#window {
+	width: 70%;
+	height: 90%;
+	background-color: black;
+	opacity: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+    overflow-y:scroll; 
+}
+#form {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+#message {
+	width: 95.5%;
+}
+#send {
+}
+p {
+	color: white;
+}
+.message {
+	color: white;
+}
+.time {
+	color: grey;
+	font-size: 5px;
+}
+#username {
+	
+}
