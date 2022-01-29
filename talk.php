@@ -1,6 +1,5 @@
 <?php
 session_start();
-print_r($_SESSION["id"]);
 ?>
 
 <html>
@@ -11,13 +10,13 @@ print_r($_SESSION["id"]);
 		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<div id="window">
-		</div>
-			<form method="GET" action="#" id="form">
-				<input type="text" name="message" id="message" placeholder="type your message"> 
-				<input id="hidden" type="hidden" value="<?php echo $_SESSION["id"] ?>">
-				<button id="send" >send</button>
-			</form>
+		<a href="index.php?logout=true"><img src="fireSpeaker.svg" id="backImg"></a>
+		<div id="window"></div>
+		<form method="GET" action="#" id="form">
+			<input type="text" name="message" id="message" placeholder="type your message"> 
+			<input id="hidden" type="hidden" value="<?php echo $_SESSION["id"] ?>">
+			<button id="send" >send</button>
+		</form>
 	</body>
 </html>
 

@@ -6,14 +6,15 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<img src="fireSpeaker.svg">
-		<a href="register.php">register</a>
+		<img src="fireSpeaker.svg" style="width: 100%">
 		
-		<form method="POST" action="#">
-			<input class="inputs" id="username" type="text" name="username" placeholder="username">
-			<input class="inputs" id="password" type="password" name="password" placeholder="password">
-			<input type="submit" name="submit" value="Login">
+		<form method="POST" action="#" id="loginForm">
+			<div class="divsForInput"><input class="inputs" id="username" type="text" name="username" placeholder="username"></div>
+			<div class="divsForInput"><input class="inputs" id="password" type="password" name="password" placeholder="password"></div>
+			<div id="divForInput"><input type="submit" name="submit" value="Login" id="login"></div>
 		</form>
+		<div id="registerHereDiv">	<a href="register.php" id="registerHere">You don't have account yet? Click here!</a></div>
+		<h3>Fire Speaker is profesional service to all people comunication from everywhere.</h3>
 	</body>
 </html>
 
@@ -21,6 +22,11 @@
 session_start();
 require 'db_connect.php';
 
+if(isset($_GET["logout"])) {
+	if($_GET["logout"] == "true") {
+		session_destroy();
+	}
+}
 if(isset($_POST["submit"])) {
 	$user = mysqli_query($conn,  'SELECT * FROM `users` WHERE usernameLog = "' . md5($_POST["username"]) . '" AND password = "' . md5($_POST["password"]) . '"');
 	$userData = mysqli_fetch_row($user);

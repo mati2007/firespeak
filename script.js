@@ -16,7 +16,7 @@ $("#send").click(function(){
   
 	$("#message")[0].value = "";
 	}
-});
+});	
 
 setInterval(function(){ 
 	$.ajax({url: "http://localhost/firespeak/getMessages.php", success: function(result){

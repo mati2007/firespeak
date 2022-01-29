@@ -21,10 +21,89 @@ input {
 	margin-right: auto;
 	position: relative;
 }
-#message {
-	width: 95.5%;
+@media screen and (max-width: 400px){
+	#formReg {
+		width: 100%;
+	}
+	#loginForm {
+		width: 100%;
+	}
 }
-#send {
+@media screen and (max-width: 600px) and (min-width: 400px) {
+	#formReg {
+		width: 70%;
+	}
+	#loginForm {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+	#formReg {
+		width: 50%;
+	}
+	#loginForm {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+	#formReg {
+		width: 40%;
+	}
+	#loginForm {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 1400px) and (min-width: 1000px) {
+	#formReg {
+		width: 30%;
+	}
+	#loginForm {
+		width: 30%;
+	}
+}
+@media screen and (min-width: 1400px) {
+	#formReg {
+		width: 25%;
+	}
+	#loginForm {
+		width: 25%;
+	}
+}
+
+
+
+@media screen and (max-width: 600px) {
+	#message {
+		width: 65%;
+	}
+	#send {
+		width: 35%;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 601px) {
+	#message {
+		width: 80%;
+	}
+	#send {
+		width: 20%;
+	}
+	
+}
+@media screen and (min-width: 1001px) and  (max-width: 1399px){
+	#message {
+		width: 90%;
+	}
+	#send {
+		width: 10%;
+	}
+}
+@media screen and (min-width: 1400px) {
+	#message {
+		width: 95%;
+	}
+	#send {
+		width: 5%;
+	}
 }
 p {
 	color: white;
@@ -37,5 +116,93 @@ p {
 	font-size: 5px;
 }
 #username {
+	border: solid 2px black;
+	border-radius: 5px;
+	width: 100%;
+}
+#password {
+	border: solid 2px black;
+	border-radius: 5px;
+	margin-top: 2px;
+	width: 100%;
+}
+#login {
+	border: solid 2px black;
+	border-radius: 5px;
+	margin-top: 2px;
+	background-color:  rgb(232, 240, 254);
+	width: 50%;
+	margin-left: 25%;
 	
+}
+#registerHere {
+	text-decoration: none;
+	color: black;
+}
+#registerHereDiv {
+	margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17.7%;
+	min-width: 260px;
+}
+#loginForm {
+	margin-left: auto;
+	margin-right: auto;
+}
+.divsForInput {
+	min-width: 260px;
+}
+#divForInput {
+	min-width: 111px;
+}
+#e-mailReg {
+	border: solid 2px black;
+	border-radius: 5px;
+	width: 100%;
+}
+#usernameReg {
+	border: solid 2px black;
+	border-radius: 5px;
+	width: 100%;
+	margin-top: 5px;
+}
+#passwordReg {
+	border: solid 2px black;
+	border-radius: 5px;
+	width: 100%;
+	margin-top: 5px;
+}
+#dateOfBirthReg {
+	border: solid 2px black;
+	border-radius: 5px;
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 5px;
+}
+#register {
+	border: solid 2px black;
+	border-radius: 5px;
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 5px;
+}
+#formReg {
+	margin-left: auto;
+	margin-right: auto;
+}
+#backToIndex {
+	margin-top: 400px;
+	border: 2px solid black;
+	border-radius: 7px;
+	text-decoration: none;
+	margin-left: auto;
+	padding: 5px;
+	width: 6px;
+}
+#backImg {
+	width: 150px;
+}
+h3 {
+	text-align: center;
 }

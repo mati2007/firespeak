@@ -6,11 +6,12 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<form method="POST" action="#">
-			<input class="inputs" id="username" type="text" name="username" placeholder="username min. 14 characters und 1 digit">
-			<input class="inputs" id="e-mail" type="text" name="e-mail" placeholder="email">
-			<input class="inputs" id="password" type="password" name="password" placeholder="password min. 10 characters und 2 digits">
-			<input class="inputs" id="dateOfBirth" type="date" name="date" placeholder="select your date of birth">
+		<a href="index.php"><img src="fireSpeaker.svg" id="backImg"></a>
+		<form method="POST" action="#" id="formReg">
+			<input class="inputs" id="e-mailReg" type="text" name="e-mail" placeholder="email">
+			<input class="inputs" id="usernameReg" type="text" name="username" placeholder="username min. 14 characters und 1 digit">
+			<input class="inputs" id="passwordReg" type="password" name="password" placeholder="password min. 10 characters und 2 digits">
+			<input class="inputs" id="dateOfBirthReg" type="date" name="date" placeholder="select your date of birth">
 			<input class="inputs" id="register" type="submit" name="register" value="register">
 		</form>
 	</body>
